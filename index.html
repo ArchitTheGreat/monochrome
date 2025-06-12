@@ -136,7 +136,11 @@
           <h3 class="text-xl font-semibold mb-2">${item.name}</h3>
           <p class="text-gray-600 mb-4">Professional, pixel-perfect web solution ready to use.</p>
           <p class="font-bold text-lg mb-4">${item.price}</p>
-          <a href="${item.checkout}" class="inline-block border border-gray-900 text-gray-900 px-4 py-2 rounded hover:bg-gray-100">Buy on Gumroad</a>
+          <div class="flex gap-2">
+  <a href="${item.url}" class="inline-block border border-gray-400 text-gray-800 px-4 py-2 rounded hover:bg-gray-100">Live Demo</a>
+  <a href="${item.checkout}" class="inline-block border border-gray-900 text-gray-900 px-4 py-2 rounded hover:bg-gray-100">Buy on Gumroad</a>
+</div>
+
         `;
         grid.appendChild(card);
       });
